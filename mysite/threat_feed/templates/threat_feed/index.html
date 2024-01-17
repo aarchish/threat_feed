@@ -1,0 +1,31 @@
+<form action="/your-name/" method="post">
+  <label for="your_name">Your name: </label>
+  <input
+    id="your_name"
+    type="text"
+    name="your_name"
+    value="{{ current_name }}"
+  />
+  <input type="submit" value="OK" />
+</form>
+
+<form action="/your-name/" method="post">
+  <label for="your_name">Your name: </label>
+  <input
+    id="your_name"
+    type="text"
+    name="your_name"
+    value="{{ current_name }}"
+  />
+  <label for="jira_ticket">Jira Ticket: </label>
+  <input
+    id="jira_ticket"
+    type="text"
+    name="jira_ticket"
+    maxlength="100"
+    required
+  />
+  <label for="object_entries">Object Entries: </label>
+  <input id="object_entries" type="text" name="object_entries" required />
+  <input type="submit" value="Validate" />
+</form>

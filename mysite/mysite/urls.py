@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path("feed/", include("threat_feed.urls")),
+    path('admin/', admin.site.urls),
 ]
